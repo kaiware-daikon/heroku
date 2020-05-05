@@ -35,7 +35,8 @@
                         <div class="row">
                             <div class="text col-md-6">
                                 <div class="date">
-                                    {{ $post->updated_at->format('Y年m月d日H時mm分') }}
+                                    <!--課題 追加開発 投稿時刻を追加しました-->
+                                    {{ $post->updated_at->format('Y年m月d日H時i分') }}
                                 </div>
                                 <div class="title">
                                     {{ str_limit($post->title, 150) }}
