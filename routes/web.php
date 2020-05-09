@@ -37,4 +37,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'NewsController@index');
 
 // 課題２
-Route::get('/profile', 'ProfileController@index');
+// Route::get('/profile', 'ProfileController@index');

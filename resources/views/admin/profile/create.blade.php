@@ -28,15 +28,15 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            @if  (old('gender')  == 'male') 
-                              <input type="radio" class="radio" name="gender" value="male" checked="checked">男性
-                              <input type="radio" class="radio" name="gender" value="female">女性
-                            @elseif (old('gender')  == 'female')
-                              <input type="radio" class="radio" name="gender" value="male">男性
-                              <input type="radio" class="radio" name="gender" value="female" checked="checked">女性
+                            @if  (old('gender')  == '男性') 
+                              <input type="radio" class="radio" name="gender" value="男性" checked="checked">男性
+                              <input type="radio" class="radio" name="gender" value="女性">女性
+                            @elseif (old('gender')  == '女性')
+                              <input type="radio" class="radio" name="gender" value="男性">男性
+                              <input type="radio" class="radio" name="gender" value="女性" checked="checked">女性
                             @else
-                              <input type="radio" class="radio" name="gender" value="male">男性
-                              <input type="radio" class="radio" name="gender" value="female">女性
+                              <input type="radio" class="radio" name="gender" value="男性">男性
+                              <input type="radio" class="radio" name="gender" value="女性">女性
                             @endif
                         </div>
                     </div>
